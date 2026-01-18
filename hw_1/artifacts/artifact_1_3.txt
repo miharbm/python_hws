@@ -1,0 +1,24 @@
+PS C:\Users\Admin\Downloads\Изображения\Рабочий стол\itmo\python_hws> uv run .\hw_1\app_1_3.py
+adsqw
+dq
+wd
+qsa
+d
+qw
+dq
+wd
+as
+dqw
+d
+^Z
+stdin:       11      11      36
+
+
+PS C:\Users\Admin\Downloads\Изображения\Рабочий стол\itmo\python_hws> uv run .\hw_1\app_1_3.py .\hw_1\test.txt
+     100     100    1502 .\test\test.txt
+
+
+PS C:\Users\Admin\Downloads\Изображения\Рабочий стол\itmo\python_hws> uv run .\hw_1\app_1_3.py .\hw_1\test.txt .\hw_1\test2.txt
+     100     100    1502 .\test\test.txt
+      10      10     180 .\test\test2.txt
+     110     110    1682 total

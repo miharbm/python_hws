@@ -1,0 +1,16 @@
+[project]
+name = "homeworks"
+version = "0.1.0"
+description = "Домашние работы"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "faker>=40.1.0",
+    "latexgen-hw-itmo>=1.0.3",
+    "pillow>=12.1.0",
+    "numpy>=2.4.1",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

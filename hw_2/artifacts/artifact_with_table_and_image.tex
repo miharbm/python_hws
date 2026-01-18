@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english, russian]{babel}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{geometry}
+
+\begin{document}
+
+\title{Пример PDF с таблицей и изображением}
+\author{Студент}
+\maketitle
+
+
+    \section{Введение}
+
+    Этот документ демонстрирует возможности библиотеки \texttt{latexgen} для генерации LaTeX кода.
+
+    \section{Таблица языков программирования}
+
+    \begin{table}[h!]
+    \centering
+    \begin{tabular}{lcllc}
+        {Язык} & {Год} & {Автор} & {Типизация} & {Уровень памяти} \\
+        \hline
+        {Python} & {1991} & {Гвидо ван Россум} & {Динамическая} & {Высокий} \\
+        {Java} & {1995} & {Джеймс Гослинг} & {Статическая} & {Высокий} \\
+        {JavaScript} & {1995} & {Брендан Эйх} & {Динамическая} & {Высокий} \\
+        {Go} & {2009} & {Google} & {Статическая} & {Средний} \\
+        {Rust} & {2010} & {Graydon Hoare} & {Статическая} & {Низкий} \\
+        \hline
+    \end{tabular}
+    \caption{Сравнение современных языков программирования}
+    \label{tab:languages}
+\end{table}
+
+    \section{Пример изображения}
+
+    \begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth,scale=0.8]{./hw_2/artifacts/sample_image.png}
+    \caption{Пример вставки изображения в LaTeX документ}
+    \label{fig:sample}
+\end{figure}
+
+    \section{Заключение}
+
+    Документ был полностью сгенерирован с помощью Python библиотеки \texttt{latexgen}.
+    Таблица и изображение добавлены автоматически.
+    
+
+\end{document}

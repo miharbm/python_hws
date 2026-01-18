@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  latex-hw02:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hw02-latex-builder
+    working_dir: /HW_2
+    volumes:
+      - uv-cache:/root/.cache/uv
+      - ./artifacts:/HW_2/artifacts
+    environment:
+      - UV_PROJECT_ENVIRONMENT=/HW_2/.venv
+      - PYTHONPATH=/HW_2
+      - UV_SYSTEM_PYTHON=1
+    tty: true
+    stdin_open: true
+    command: >
+      sh -c "
+        uv run python /HW_2/app_2_2.py
+      "
+    
+volumes:
+  uv-cache:
+  output-volume:
